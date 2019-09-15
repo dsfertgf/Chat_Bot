@@ -17,6 +17,6 @@
 >$ cd PyTorch-GAN/<br>
 >$ python Chat_bot.py
 
-打开telegram，搜索Robot_Stack就可以开始对话
-![搜索Robot_Stack][]
-![开始聊天][]
+打开telegram，搜索Robot_Stack就可以开始对话<br>
+! [搜索Robot_Stack][]<br>
+! [开始聊天][]
