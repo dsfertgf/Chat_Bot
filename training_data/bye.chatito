@@ -1,0 +1,21 @@
+// Ways to say goodbye
+
+import ./common.chatito
+
+%[bye]('training': '30')
+    ~[bye] [leaving?]
+    ~[leaving?] ~[bye]
+    ~[bye]
+
+~[bye]
+    bye
+    goodbye
+    farewell
+    ciao
+    see you
+    seeya
+
+~[leaving]
+    talk to you soon
+    talk to you later
+

@@ -1,0 +1,28 @@
+// Ways to say hello
+
+import ./common.chatito
+
+%[greet]('training': '50', 'testing': '30')
+    *[20%] ~[hi]
+    ~[greetings]
+    ~[hi] ~[greetings?]
+    ~[hi] ~[whats up]
+    ~[greetings] ~[whats up]
+    ~[hi] ~[greetings] ~[whats up]
+
+~[greetings]
+    good morning
+    good afternoon
+    good day
+    good night
+    morning
+    hello
+    hi
+    Nice to meet you
+
+
+~[whats up]
+    how are you
+    how are you doing
+    how is it going
+    how are things going

@@ -1,0 +1,6 @@
+// Ways to say goodbye
+
+import ./common.chatito
+
+%[thank]('training': '4')
+    ~[thanks]

@@ -1,0 +1,22 @@
+// Ways to say hello
+
+import ./common.chatito
+
+%[what]('training': '40')
+
+    ~[hi?] ~[whats up]
+
+
+~[whats up]
+    how can you help me
+    how to ask questions
+    how to use it
+    what should I say
+    what can you do
+    what should I do
+    can you tell me how to query
+    can you help me
+    can you tell me what I should do
+    what
+    what are you capable of
+

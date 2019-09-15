@@ -1,0 +1,20 @@
+// Ways to say yes
+
+import ./common.chatito
+
+%[affirmative]('training': '50')
+    ~[yes]
+    ~[yes] ~[yes?]
+
+~[yes]
+    yes
+    right
+    correct
+    yep
+    sure
+    ok
+    yeah
+    great
+    yes it is
+    that's great
+
