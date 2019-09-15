@@ -4,7 +4,7 @@
 * [安装](#安装)
 ## 安装
 先安装基本的python包
->$ git clone https://github.com/dsfertgf/Chat_Bot
+>$ git clone https://github.com/dsfertgf/Chat_Bot<br>
 >$ cd PyTorch-GAN/
 >$ sudo pip3 install -r requirements.txt
 
