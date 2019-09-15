@@ -18,5 +18,5 @@
 >$ python Chat_bot.py
 
 打开telegram，搜索Robot_Stack就可以开始对话<br>
-! [搜索Robot_Stack][]<br>
-! [开始聊天][]
+! [搜索Robot_Stack](https://github.com/dsfertgf/Chat_Bot/blob/master/assets/1.png)<br>
+! [开始聊天](https://github.com/dsfertgf/Chat_Bot/blob/master/assets/1.png)
