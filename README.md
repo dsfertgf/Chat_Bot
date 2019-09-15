@@ -21,7 +21,9 @@
 <p align="center">
     <img src="assets/1.png" width="600"\>
 </p>
+
 可以通过打字与Robot交流<br>
+
 <p align="center">
     <img src="assets/2.png" width="600"\>
 </p>
