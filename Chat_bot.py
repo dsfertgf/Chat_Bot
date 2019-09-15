@@ -2,11 +2,8 @@ from config import IEXTOKEN
 from iexfinance.stocks import Stock
 from iexfinance.refdata import get_symbols
 from rasa_nlu.training_data import load_data
-from rasa_nlu.config import RasaNLUModelConfig
 from rasa_nlu.model import Trainer
 from rasa_nlu import config
-from sklearn.metrics.pairwise import cosine_similarity
-import spacy
 import re
 import random
 from sklearn.metrics.pairwise import cosine_similarity
@@ -62,13 +59,6 @@ def find_stock(params):
     return results
 
 
-pattern_match = {'symbol:(.*)-|symbol:(.*)': 'symbol',
-                 'name:(.*)-|name:(.*)': 'name',
-                 'description:(.*)-|description(.*)': 'description'}
-
-rules = ['symbol:(.*)-|symbol:(.*)', 'name:(.*)-|name:(.*)', 'description:(.*)-|description(.*)']
-
-
 def match_rule(message):
     global rules
     global pattern_match
@@ -86,7 +76,6 @@ def match_rule(message):
                 patterns.append(pattern_match[pattern])
                 sens.append(var)
     if len(patterns) > 0:
-        print(patterns, sens)
         return patterns, sens
     return "default", None
 
@@ -149,7 +138,6 @@ def wait_affirm(message):
         stockk.pop()
         results={}
         if len(stockk) == 1:
-            print("affirm1")
             wait_for_affirm = 0
             affirmative = 0
             k = stockk[0]
@@ -157,7 +145,6 @@ def wait_affirm(message):
             stock_symbol = symbol_map_reverse[k]
             stock_o = Stock(stock_symbol, token=Token)
             stock_info = stock_o.get_quote()
-            print(stock_info)
             for m in params_description:
                 k = modi_des(m)
                 results[k] = stock_info[k]
@@ -168,11 +155,9 @@ def wait_affirm(message):
                                      (*list(results.values())))
             return p
         elif len(stockk) == 2:
-            print("affirm2")
             affirmative = 1
             return wait_affirm(message)
         else:
-            print("affirm3")
             wait_for_affirm = 1
             affirmative = 0
             k = random.choice(more_than_one)
@@ -207,10 +192,8 @@ def state_filled(message):
             wait_for_affirm = 1
             stocks = find_stock(params_stock)
             stockk += stocks[len(stocks) - 1]
-            print(1)
             return k.format(stockk[len(stockk) - 2], stockk[len(stockk) - 1])
         else:
-            print(2)
             return k
     elif 'cannot_find' in stock:
         state=FILLING
@@ -247,25 +230,21 @@ def state_filling(message):
     patterns, varss = match_rule(message)
     parse_data = interpret(message)
     entities = parse_data['entities']
-    print(params_stock)
     for ent in entities:
         if ent['entity'] == 'stock' and ":" not in ent['value']:
             params_stock.append(ent['value'])
         if ent['entity'] == 'description' and ":" not in ent['value']:
             if ent['value'] not in params_description:
                 params_description.append(ent['value'])
-    print(params_stock)
     if patterns == 'default' and len(entities) == 0:
         return random.choice(cannot_understand)
     elif patterns != 'default':
-        print(varss)
         for m in range(len(patterns)):
             if patterns[m] != 'description':
                 params_append[patterns[m]].append(varss[m])
             else:
                 if varss[m] not in params_append[patterns[m]]:
                     params_append[patterns[m]].append(varss[m])
-        print(params_stock)
     lack_symbol = 1
     lack_des = 2
     if len(params_description) > 0:
@@ -320,11 +299,9 @@ def begin(message):
     elif state == 1 and start == 1 and wait_for_affirm == 0:
         return state_filling(message)
     elif intent == "affirmative" and wait_for_affirm==1:
-        print("affrimative")
         affirmative=1
         return wait_affirm(message)
     elif intent == "negative" and wait_for_affirm==1:
-        print("negative")
         affirmative=2
         return wait_affirm(message)
     elif intent == "query":
@@ -405,7 +382,14 @@ lack_responses = []
 wait_for_affirm = 0
 affirmative = 0
 params_stock, params_description, params_time = [], [], []
+
+
+# Define some map rules
 params_append = {'symbol': params_stock, 'name': params_stock, 'description': params_description}
+pattern_match = {'symbol:(.*)-|symbol:(.*)': 'symbol',
+                 'name:(.*)-|name:(.*)': 'name',
+                 'description:(.*)-|description(.*)': 'description'}
+rules = ['symbol:(.*)-|symbol:(.*)', 'name:(.*)-|name:(.*)', 'description:(.*)-|description(.*)']
 
 
 # Create a Rasa_NLU systiom
