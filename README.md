@@ -7,6 +7,7 @@
 >$ git clone https://github.com/dsfertgf/Chat_Bot
 >$ cd PyTorch-GAN/
 >$ sudo pip3 install -r requirements.txt
+
 再安装一些额外组件
 
 
