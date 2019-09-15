@@ -19,5 +19,5 @@
 
 打开telegram，搜索Robot_Stack就可以开始对话<br>
 <p align="center">
-    <img src="assets/1.png" width="360"\>
+    <img src="assets/1.png" width="600"\>
 </p>
