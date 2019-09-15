@@ -7,7 +7,16 @@
 >$ git clone https://github.com/dsfertgf/Chat_Bot<br>
 >$ cd PyTorch-GAN/<br>
 >$ sudo pip3 install -r requirements.txt
+
 再安装一些额外组件
 >$ python -m spacy download en<br>
 >$ python -m spacy download en_core_web_mdt
 
+## 实现
+### 运行示例
+>$ cd PyTorch-GAN/<br>
+>$ python Chat_bot.py
+
+打开telegram，搜索Robot_Stack就可以开始对话
+![搜索Robot_Stack][]
+![开始聊天][]
