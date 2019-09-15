@@ -2,7 +2,7 @@
 
 import ./common.chatito
 
-%[negative]('training': '50')
+%[negative]('training': '20')
     *[20%] ~[no]
     ~[no] ~[please?] ~[its not ok?]
     ~[please?] ~[no] ~[its not ok?]

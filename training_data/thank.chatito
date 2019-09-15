@@ -2,5 +2,5 @@
 
 import ./common.chatito
 
-%[thank]('training': '4')
+%[thank]('training': '5')
     ~[thanks]

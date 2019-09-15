@@ -37,7 +37,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.learn_socks5">
+  <component name="RunManager" selected="Python.Chat_bot">
     <configuration name="Chat_bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="telegram" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,6 +81,9 @@
       <module name="telegram" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.6" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../laern" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -146,8 +149,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.learn_socks5" />
         <item itemvalue="Python.Chat_bot" />
+        <item itemvalue="Python.learn_socks5" />
         <item itemvalue="Python.rolling" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.IEX" />

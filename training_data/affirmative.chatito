@@ -2,7 +2,7 @@
 
 import ./common.chatito
 
-%[affirmative]('training': '50')
+%[affirmative]('training': '20')
     ~[yes]
     ~[yes] ~[yes?]
 

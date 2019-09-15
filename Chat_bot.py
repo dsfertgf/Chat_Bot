@@ -419,7 +419,7 @@ erase_all()
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    msg=Greetings[0]
+    msg="I'm ready for our talk"
     bot.send_message(message.chat.id, msg)
 
 
