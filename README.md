@@ -5,9 +5,9 @@
 ## 安装
 先安装基本的python包
 >$ git clone https://github.com/dsfertgf/Chat_Bot<br>
->$ cd PyTorch-GAN/
->$ sudo pip3 install -r requirements.txt
-
+>$ cd PyTorch-GAN/<br>
+>$ sudo pip3 install -r requirements.txt<br>
 再安装一些额外组件
-
+>$ python -m spacy download en<br>
+>$ python -m spacy download en_core_web_mdt<br>
 
