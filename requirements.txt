@@ -1,0 +1,10 @@
+urllib3
+iexfinance
+rasa_nlu
+pysocks
+pysocket
+sklearn
+spacy
+numpy
+pyTelegramBotAPI
+
