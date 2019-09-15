@@ -18,5 +18,10 @@
 >$ python Chat_bot.py
 
 打开telegram，搜索Robot_Stack就可以开始对话<br>
-! [搜索Robot_Stack][]<br>
-! [开始聊天][]
+<p align="center">
+    <img src="assets/1.png" width="600"\>
+</p>
+可以通过打字与Robot交流
+<p align="center">
+    <img src="assets/2.png" width="600"\>
+</p>
