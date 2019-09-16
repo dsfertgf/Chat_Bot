@@ -28,3 +28,9 @@
 <p align="center">
     <img src="assets/2.png" width="600"\>
 </p>
+
+### DEMO-GIF
+
+<p align="center">
+    <img src="assets/demo.gif" width="600"\>
+</p>
