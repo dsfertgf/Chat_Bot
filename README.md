@@ -3,6 +3,7 @@
 ## 目录
 * [安装](#安装)
 * [实现](#实现)
+* [个性化改动](#个性化改动)
 ## 安装
 先安装基本的python包
 >$ git clone https://github.com/dsfertgf/Chat_Bot<br>
