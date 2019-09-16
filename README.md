@@ -36,5 +36,5 @@
 </p>
 
 # 个性化改动
-如果你对训练数据不满意，想要用更加丰富的训练数据得出更好地模型，你可以通过查看[Chatito 使用文档](https://github.com/rodrigopivi/Chatito)来对训练数据做个性化改动。
+如果你对训练数据不满意，想要用更加丰富的训练数据得出更好地模型，你可以通过查看[Chatito 使用文档](https://github.com/rodrigopivi/Chatito)来下载chatito并对训练数据做个性化改动。
 
