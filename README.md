@@ -16,7 +16,7 @@
 
 ## 实现
 ### 运行示例
->$ cd PyTorch-GAN/<br>
+>$ cd Chat_Bot/<br>
 >$ python3 Chat_bot.py
 
 打开telegram，搜索Robot_Stack就可以开始对话<br>
