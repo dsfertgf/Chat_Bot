@@ -30,7 +30,7 @@
 </p>
 
 ### DEMO-GIF
-<b>You can find the demo-video</b> [here](https://github.com/eriklindernoren/Keras-GAN
+<b>You can find the demo-video</b> [here](https://www.bilibili.com/video/av67945882)
 <p align="center">
     <img src="assets/demo.gif" width="400"\>
 </p>
