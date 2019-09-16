@@ -31,7 +31,7 @@
 </p>
 
 ### DEMO-GIF
-<b>You can find the demo-video</b> [here](https://www.bilibili.com/video/av67945882)
+<b>You can find the full demo-video</b> [here](https://www.bilibili.com/video/av67945882)
 <p align="center">
     <img src="assets/demo.gif" width="400"\>
 </p>
